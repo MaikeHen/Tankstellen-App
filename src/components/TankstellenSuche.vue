@@ -59,7 +59,6 @@ button {
 .streetsearch {
   background-color: var(---tigers-eye);
   border: none;
-  opacity: 0.9;
   color: var(---honolulu-blue);
 }
 button:hover {
@@ -68,5 +67,16 @@ button:hover {
 }
 label {
   display: none;
+}
+@media (max-width: 375px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .streetsearch {
+    border-radius: 30px;
+    margin: 1rem;
+  }
 }
 </style>

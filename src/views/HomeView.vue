@@ -9,7 +9,7 @@
     />
   </div>
   <div class="gasstations">
-    <TankstellenSuche :gasstations="gasstations" />
+    <TankstellenSuche gassstations="gasstations" />
   </div>
   <div class="sortfunction">
     <SortierOption :gasstations="gasstations" />
