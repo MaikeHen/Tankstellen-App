@@ -15,24 +15,17 @@ export default {
     };
   },
   computed: {},
-  methods: {},
+  methods: {
+    sort() {
+      console.log(this.newStreet);
+    },
+  },
 };
 </script>
 
 <style scoped>
 * {
-  padding: 2rem;
-}
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
+  padding-top: 2rem;
 }
 button {
   border-radius: 25%;
@@ -43,6 +36,8 @@ button {
   outline: none;
   border: none;
   opacity: 0.9;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
 }
 button:hover {
   background-color: var(---tomato);

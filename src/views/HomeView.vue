@@ -9,10 +9,7 @@
     />
   </div>
   <div class="gasstations">
-    <TankstellenSuche
-      :gasstations="gasstations"
-      @StreetSearchInput="console.log('hello')"
-    />
+    <TankstellenSuche :gasstations="gasstations" />
   </div>
   <div class="sortfunction">
     <SortierOption :gasstations="gasstations" />
@@ -61,13 +58,11 @@ export default {
   filter: invert(38%) sepia(58%) saturate(953%) hue-rotate(1deg)
     brightness(105%) contrast(91%);
 }
-.gasstations {
-  padding: 2rem;
-}
 ul {
   list-style-type: none;
 }
 li {
-  padding: 1rem;
+  font-size: 1.2rem;
+  padding: 2rem;
 }
 </style>

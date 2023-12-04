@@ -1,5 +1,6 @@
 <template>
-  <p>Du suchst eine Tankstelle in Köln? Nichts leichter als das!</p>
+  <h1>Du suchst eine Tankstelle in Köln? Nichts leichter als das!</h1>
+  <h2>Wähle die Straßensuche oder lass dir die Adressen sortiert anzeigen.</h2>
   <form>
     <label for="streetsearch"></label>
     <input
@@ -7,7 +8,7 @@
       name="streetsearch"
       id="streetsearch"
       class="streetsearch"
-      placeholder="z.B. Volksgartenstraße"
+      placeholder="z.B. Waldstr. "
       v-model="newStreet"
     />
     <button class="streetsearch" type="submit" @click.prevent="streetSearch">
@@ -38,28 +39,23 @@ export default {
 * {
   padding: 2rem;
 }
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
 
 input {
   border-radius: 30px 0 0 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
 }
 
 input::placeholder {
-  color: var(---text-color-button);
+  color: var(---honolulu-blue);
 }
 button {
   border-radius: 0 30px 30px 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
 }
+
 .streetsearch {
   background-color: var(---tigers-eye);
   border: none;
@@ -70,7 +66,6 @@ button:hover {
   background-color: var(---tomato);
   cursor: pointer;
 }
-
 label {
   display: none;
 }
